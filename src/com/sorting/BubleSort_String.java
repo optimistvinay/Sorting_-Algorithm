@@ -1,18 +1,17 @@
 package com.sorting;
 
-public class BubleSort {
-
+public class BubleSort_String {
 
     public static void main(String[] args) {
 
-        int[] inputData = {34, 11, 526,35, 99};
+        String[] inputData = {"AB", "DD", "AWE", "RTY", "ADF"};
 
-        int temp;
+        String temp;
         for(int i = 0; i < inputData.length; i++){
             boolean change = false;
 
             for(int j=0; j< inputData.length-1-i; j++){
-                if(inputData[j] > inputData[j+1]){
+                if(inputData[j].compareTo(inputData[j+1]) > 0){
                     temp = inputData[j];
                     inputData[j] = inputData[j+1];
                     inputData[j+1] = temp;
